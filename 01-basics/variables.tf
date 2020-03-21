@@ -3,6 +3,7 @@
 ########################################################################
 
 variable "account_alias" {
+  default = "<account-alias>"
 }
 
 variable "aws_region" {

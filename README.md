@@ -36,8 +36,8 @@ The procedure for deploying this infrastructure would resemble the following:
     terraform apply -target module.essentials.aws_dynamodb_table.lock-table \
                     -target aws_s3_bucket.logs
     
-    # edit main.tf and restore the backend section, also provide a value for <account-alias>
-    # edit variables.tf and provide a default value for account_alias
+    # edit main.tf and restore the backend section, also enter a value for <account-alias>
+    # edit variables.tf and enter a value for <account-alias>
     terraform init
     terraform plan
     terraform apply
